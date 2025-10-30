@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>EE Paulo Egydio </title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top">E.E Paulo Egydio </a></li>
+                <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
+                <li class="sidebar-nav-item"><a href="#about">Sobre</a></li>
+                <li class="sidebar-nav-item"><a href="#services">Calendário Escolar</a></li>
+                <li class="sidebar-nav-item"><a href="#portfolio">Galeria</a></li>
+                <li class="sidebar-nav-item"><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="container px-4 px-lg-5 text-center">
+                <h1 class="mb-1"></h1>
+                <h3 class="mb-5"><em></em></h3>
+            </div>
+        </header>
+        <!-- About-->
+        <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Escola Estadual Paulo Egydio de Oliveira Carvalho Senador</h2>
+                        <p class="lead mb-5">A Escola Estadual Paulo Egydio de Oliveira Carvalho Senador oferece educação de qualidade, unindo aprendizado, cidadania e desenvolvimento integral. Com professores dedicados e infraestrutura moderna, preparamos nossos alunos para enfrentar os desafios do futuro, estimulando criatividade, ética e participação em projetos acadêmicos, culturais e esportivos. O site da escola tem como objetivo informar a comunidade sobre notícias, eventos e atividades pedagógicas, promovendo comunicação transparente, valorizando o trabalho educacional e aproximando a escola de alunos, familiares e toda a comunidade.
+                            
+                         </p>
+                        <a class="btn btn-dark btn-xl" href="#services">Mais Sobre</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services-->
+<section class="content-section bg-primary text-white text-center" id="services">
+  <div class="container px-4 px-lg-5">
+    <div class="content-section-heading">
+      <h3 class="text-secondary mb-0">Cursos</h3>
+      <h2 class="mb-5">O que o Oferecemos</h2>
+    </div>
+
+    <div class="row gx-4 gx-lg-5">
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-code"></i></span>
+        <h4><strong>Desenvolvimento de Sistemas</strong></h4>
+        <p class="text-faded mb-0">Aprenda as tendências do Mercado</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-cart-flatbed"></i></span>
+        <h4><strong>Logística</strong></h4>
+        <p class="text-faded mb-0">Organizando e Otimizando negócios</p>
+      </div>
+
+      <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-suitcase-medical"></i></span>
+        <h4><strong>Farmácia</strong></h4>
+        <p class="text-faded mb-0">Sáude em primeiro lugar</p>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fa-solid fa-hotel"></i></span>
+        <h4><strong>Hotelaria</strong></h4>
+        <p class="text-faded mb-0"></p>
+      </div>
+
+      <!-- BLOCO DO CALENDÁRIO ESCOLAR -->
+      <div class="col-lg-12 mt-7">
+        <h2 class="text-white mb-4">Calendário Escolar</h2>
+        <div id="calendarContainer" style="margin:auto;max-width:800px;background:#fff;color:#333;padding:20px;border-radius:16px;box-shadow:0 8px 20px rgba(0,0,0,0.2);">
+          <div id="calendarHeader" style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+            <button id="prevMonth" class="btn btn-sm btn-primary">&lt;</button>
+            <div id="monthYear" style="font-weight:700;font-size:1.2rem;color:#34495e;"></div>
+            <button id="nextMonth" class="btn btn-sm btn-primary">&gt;</button>
+            <button id="todayBtn" class="btn btn-sm btn-dark">Hoje</button>
+          </div>
+          <div id="daysOfWeek" style="display:grid;grid-template-columns:repeat(7,1fr);margin-bottom:8px;font-weight:600;color:#7f8c8d;">
+            <div>Dom</div><div>Seg</div><div>Ter</div><div>Qua</div><div>Qui</div><div>Sex</div><div>Sáb</div>
+          </div>
+          <div id="datesGrid" style="display:grid;grid-template-columns:repeat(7,1fr);gap:4px;"></div>
+
+          <!-- Agenda -->
+          <div id="agenda" style="background:#f8f9fa;margin-top:20px;padding:10px;border-radius:12px;box-shadow:inset 0 0 6px rgba(0,0,0,0.1);max-height:300px;overflow-y:auto;">
+            <h4 style="margin-top:0;">Próximos Eventos</h4>
+            <div id="agendaList"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Eventos -->
+  <div id="addEventModal" style="position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;justify-content:center;align-items:center;z-index:1000;">
+    <div id="modalContent" style="background:white;border-radius:14px;padding:20px;width:320px;max-width:90%;">
+      <h3 id="modalTitle">Evento</h3>
+      <form id="eventForm">
+        <input type="hidden" id="eventDate" />
+        <input type="hidden" id="eventId" />
+        <label for="eventTitle">Título</label>
+        <input type="text" id="eventTitle" class="form-control" required />
+        <label for="eventDescription" class="mt-2">Descrição</label>
+        <textarea id="eventDescription" class="form-control" rows="3"></textarea>
+        <div class="mt-3 text-end">
+          <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
+          <button type="button" class="btn btn-danger btn-sm" id="deleteBtn">Excluir</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="cancelBtn">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Script do Calendário -->
+<script>
+(function(){
+  const datesGrid = document.getElementById('datesGrid');
+  const monthYearLabel = document.getElementById('monthYear');
+  const prevBtn = document.getElementById('prevMonth');
+  const nextBtn = document.getElementById('nextMonth');
+  const todayBtn = document.getElementById('todayBtn');
+  const addEventModal = document.getElementById('addEventModal');
+  const modalContent = document.getElementById('modalContent');
+  const eventForm = document.getElementById('eventForm');
+  const eventDateInput = document.getElementById('eventDate');
+  const eventIdInput = document.getElementById('eventId');
+  const eventTitleInput = document.getElementById('eventTitle');
+  const eventDescriptionInput = document.getElementById('eventDescription');
+  const cancelBtn = document.getElementById('cancelBtn');
+  const deleteBtn = document.getElementById('deleteBtn');
+  const agendaList = document.getElementById('agendaList');
+
+  let currentDate = new Date();
+  currentDate.setHours(0,0,0,0);
+  const today = new Date();
+  today.setHours(0,0,0,0);
+
+  const LS_EVENTS_KEY = 'organizational_calendar_events';
+  let events = {};
+
+  function loadEvents(){ try { events = JSON.parse(localStorage.getItem(LS_EVENTS_KEY)) || {}; } catch { events = {}; } }
+  function saveEvents(){ localStorage.setItem(LS_EVENTS_KEY, JSON.stringify(events)); }
+  function formatDateKey(date){ return date.toISOString().slice(0,10); }
+
+  function renderCalendar(){
+    gsap.to(datesGrid.children, { opacity:0, y:20, stagger:0.01, duration:0.2, onComplete: ()=> {
+      datesGrid.innerHTML = '';
+      const year = currentDate.getFullYear();
+      const month = currentDate.getMonth();
+      const monthNames = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+      monthYearLabel.textContent = monthNames[month] + ' ' + year;
+
+      const firstDay = new Date(year, month, 1);
+      const startDate = new Date(year, month, 1 - firstDay.getDay());
+      for(let i=0;i<42;i++){
+        const date = new Date(startDate);
+        date.setDate(startDate.getDate() + i);
+        const dateKey = formatDateKey(date);
+        const cell = document.createElement('div');
+        cell.style.background = '#ecf0f1';
+        cell.style.borderRadius = '10px';
+        cell.style.minHeight = '60px';
+        cell.style.padding = '5px';
+        cell.style.cursor = 'pointer';
+        cell.style.display = 'flex';
+        cell.style.flexDirection = 'column';
+        cell.style.transition = 'background 0.2s';
+        cell.addEventListener('mouseover',()=>cell.style.background='#d6eaf8');
+        cell.addEventListener('mouseout',()=>cell.style.background='#ecf0f1');
+        if(date.getMonth() !== month) cell.style.opacity = '0.4';
+        if(date.getTime() === today.getTime()) cell.style.border = '2px solid #2980b9';
+        const num = document.createElement('div');
+        num.style.fontWeight = '700';
+        num.textContent = date.getDate();
+        cell.appendChild(num);
+        if(events[dateKey]){ events[dateKey].forEach(ev=>{
+          const evEl=document.createElement('div'); evEl.textContent=ev.title;
+          evEl.style.background='#3498db'; evEl.style.color='white'; evEl.style.borderRadius='4px';
+          evEl.style.padding='2px 4px'; evEl.style.marginTop='2px'; evEl.style.fontSize='0.8rem';
+          evEl.addEventListener('click',e=>{ e.stopPropagation(); openModal(dateKey, ev); });
+          cell.appendChild(evEl);
+        });}
+        cell.addEventListener('click',()=> openModal(dateKey));
+        datesGrid.appendChild(cell);
+      }
+      gsap.fromTo(datesGrid.children, {opacity:0,y:-20}, {opacity:1,y:0,stagger:0.01,duration:0.3});
+      renderAgenda();
+    }});
+  }
+
+  function renderAgenda(){
+    agendaList.innerHTML = '';
+    const upcoming = [];
+    const now = new Date().toISOString().slice(0,10);
+    for(const dateKey in events){ if(dateKey >= now){ events[dateKey].forEach(ev=>{ upcoming.push({date:dateKey,...ev}); }); } }
+    upcoming.sort((a,b)=> a.date.localeCompare(b.date));
+    const nextTen = upcoming.slice(0,10);
+    if(nextTen.length===0){ agendaList.innerHTML = "<p>Nenhum evento futuro.</p>"; }
+    else {
+      nextTen.forEach(ev=>{
+        const item=document.createElement('div'); item.style.margin='0.5rem 0';
+        item.style.padding='0.5rem'; item.style.borderLeft='4px solid #2980b9'; item.style.background='#fff';
+        item.style.borderRadius='6px'; item.innerHTML=`<strong>${ev.date}</strong> - ${ev.title}`;
+        agendaList.appendChild(item);
+      });
+    }
+  }
+
+  function openModal(dateKey,event=null){
+    eventDateInput.value = dateKey;
+    if(event){ eventIdInput.value=event.id; eventTitleInput.value=event.title; eventDescriptionInput.value=event.description; deleteBtn.style.display="inline-block"; }
+    else { eventIdInput.value=""; eventTitleInput.value=""; eventDescriptionInput.value=""; deleteBtn.style.display="none"; }
+    addEventModal.style.display='flex';
+    gsap.fromTo(modalContent,{scale:0.8,opacity:0},{scale:1,opacity:1,duration:0.3,ease:"back.out(1.7)"});
+  }
+  function closeModal(){
+    gsap.to(modalContent,{scale:0.8,opacity:0,duration:0.2,onComplete:()=>{addEventModal.style.display='none';}});
+  }
+
+  eventForm.addEventListener('submit',e=>{ e.preventDefault();
+    const dateKey=eventDateInput.value; const id=eventIdInput.value||Date.now().toString();
+    const title=eventTitleInput.value.trim(); const description=eventDescriptionInput.value.trim(); if(!title) return;
+    if(!events[dateKey]) events[dateKey]=[]; const existing=events[dateKey].find(ev=>ev.id===id);
+    if(existing){ existing.title=title; existing.description=description; } else { events[dateKey].push({id,title,description}); }
+    saveEvents(); closeModal(); renderCalendar();
+  });
+  deleteBtn.addEventListener('click',()=>{ const dateKey=eventDateInput.value; const id=eventIdInput.value; events[dateKey]=events[dateKey].filter(ev=>ev.id!==id); saveEvents(); closeModal(); renderCalendar(); });
+  cancelBtn.addEventListener('click',closeModal);
+  addEventModal.addEventListener('click',e=>{ if(e.target===addEventModal) closeModal(); });
+  window.addEventListener('keydown',e=>{ if(e.key==='Escape') closeModal(); });
+  prevBtn.addEventListener('click',()=>{ currentDate.setMonth(currentDate.getMonth()-1); renderCalendar(); });
+  nextBtn.addEventListener('click',()=>{ currentDate.setMonth(currentDate.getMonth()+1); renderCalendar(); });
+  todayBtn.addEventListener('click',()=>{ currentDate=new Date(today); renderCalendar(); });
+
+  loadEvents(); renderCalendar();
+})();
+</script>
+
+        <!-- Callout-->
+        <section class="callout">
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mx-auto mb-5">
+                    Bem vindo
+                    <em>saiba mais</em>
+                    Sobre nossa escola
+                </h2>
+                <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/">CLIQUE AQ!</a>
+            </div>
+        </section>
+        <!-- Portfolio-->
+        <!-- Galeria de Fotos -->
+<section class="content-section bg-light" id="portfolio">
+  <div class="container px-4 px-lg-5 text-center">
+    <div class="content-section-heading">
+      <h3 class="text-secondary mb-0">Galeria</h3>
+      <h2 class="mb-5">Nossos Momentos</h2>
+    </div>
+
+    <div class="row gx-4 gx-lg-5">
+      <!-- Foto 1 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/galeria1.jpg" alt="Evento 1">
+      </div>
+      <!-- Foto 2 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/galeria 2.jpeg" alt="Evento 2">
+      </div>
+      <!-- Foto 3 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/galeria3.jpg" alt="Evento 3">
+      </div>
+      <!-- Foto 4 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/Galeria 4.jpeg" alt="Evento 4">
+      </div>
+      <!-- Foto 5 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/galeria 5.jpg" alt="Evento 5">
+      </div>
+      <!-- Foto 6 -->
+      <div class="col-md-4 col-sm-6 mb-4">
+        <img class="img-fluid rounded shadow-sm gallery-img" src="img/Galeria 6.jpeg" alt="Evento 6">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal da Galeria -->
+<div id="modalGaleria" class="modal">
+  <span class="fechar">&times;</span>
+  <img class="modal-conteudo" id="imgModal">
+  <div id="legenda"></div>
+</div>
+        <!-- Map-->
+        <div class="map" id="contact">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.482261505864!2d-46.5823555!3d-23.5151509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5f39973cdc27%3A0xd1220be6a5fa6f66!2sEscola%20Estadual%20Paulo%20Egydio%20de%20Oliveira%20Carvalho%20Senador!5e0!3m2!1spt-BR!2sbr!4v1760369213470!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br />
+        </div>
+               <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container px-4 px-lg-5">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-facebook"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" href="#!"><i class="icon-social-instagram"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white" href="#!"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <p class="text-muted small mb-0">Copyright &copy; Gabiel emerson 2025</p>
+            </div>
+        </footer>
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    <script>
+  // Seleciona o modal e elementos internos NOVO
+  const modal = document.getElementById("modalGaleria");
+  const modalImg = document.getElementById("imgModal");
+  const legenda = document.getElementById("legenda");
+  const fechar = document.getElementsByClassName("fechar")[0];
+
+  // Pega todas as imagens da galeria
+  const imagens = document.querySelectorAll(".gallery-img");
+
+  imagens.forEach(img => {
+    img.addEventListener("click", () => {
+      modal.style.display = "block";
+      modalImg.src = img.src;
+      legenda.innerHTML = img.alt;
+    });
+  });
+
+  // Fechar o modal
+  fechar.onclick = () => modal.style.display = "none";
+  modal.onclick = (event) => {
+    if (event.target === modal) modal.style.display = "none";
+  };
+</script>
+</body>
+</html>
